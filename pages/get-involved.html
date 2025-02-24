@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - SAM Life Savers</title>
+    <meta name="description" content="Volunteer with SAM Life Savers. Join our mission to provide clean water, blood donations, and support to communities in need.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css"> <!-- Link to your main CSS file -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="dark-mode">
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SAM Life Savers</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="our-work.html">Our Work</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="donate.html" class="donate-btn">Donate Now</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="get-involved-page">
+        <div class="container">
+            <h1>Get Involved - Join Our Mission</h1>
+            <p class="lead">Make a difference in the lives of those in need. There are many ways to get involved with SAM Life Savers.</p>
+
+            <section class="ways-to-help">
+                <h2>Ways to Help</h2>
+                <div class="help-grid">
+                    <!-- Donate -->
+                    <div class="help-card">
+                        <i class="fas fa-hand-holding-usd fa-3x"></i>
+                        <h3>Donate</h3>
+                        <p>Your financial contribution can make a significant impact on our projects.</p>
+                        <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                    </div>
+
+                    <!-- Volunteer -->
+                    <div class="help-card">
+                        <i class="fas fa-hands-helping fa-3x"></i>
+                        <h3>Volunteer</h3>
+                        <p>Join our team of dedicated volunteers and help us on the ground.</p>
+                        <a href="#volunteer-form-section" class="btn btn-secondary">Volunteer</a>
+                    </div>
+
+                    <!-- Sponsor a Child -->
+                    <div class="help-card">
+                        <i class="fas fa-child fa-3x"></i>
+                        <h3>Sponsor a Child</h3>
+                        <p>Provide long-term support to a child in need and transform their future.</p>
+                        <a href="#" class="btn btn-primary">Sponsor a Child</a>
+                    </div>
+
+                    <!-- Partner with Us -->
+                    <div class="help-card">
+                        <i class="fas fa-handshake fa-3x"></i>
+                        <h3>Partner with Us</h3>
+                        <p>Corporate Social Responsibility. Support our cause through partnerships.</p>
+                        <a href="#partner-form-section" class="btn btn-secondary">Partner with Us</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="volunteer-form-section" class="volunteer-form">
+                <h2>Volunteer Registration</h2>
+                <p>Fill out the form below to register as a volunteer with SAM Life Savers.</p>
+                <form id="volunteer-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Your Skills:</label>
+                        <input type="text" id="skills" name="skills">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Your Availability:</label>
+                        <input type="text" id="availability" name="availability">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">Your Interests:</label>
+                        <textarea id="interests" name="interests" rows="4"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register as Volunteer</button>
+                </form>
+            </section>
+
+            <section id="partner-form-section" class="partner-form">
+                <h2>Corporate Partnership Inquiry</h2>
+                <p>Fill out the form below to inquire about a corporate partnership with SAM Life Savers.</p>
+                <form id="partner-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="company_name">Company Name:</label>
+                        <input type="text" id="company_name" name="company_name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_person">Contact Person:</label>
+                        <input type="text" id="contact_person" name="contact_person" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Inquire About Partnership</button>
+                </form>
+            </section>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="our-work.html">Our Work</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/your_instagram_handle" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/your_twitter_handle" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-legal">
+                <p>© 2024 SAM Life Savers. All rights reserved.</p>
+                <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Widget -->
+    <a href="https://wa.me/your_whatsapp_number" class="whatsapp-widget" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.min.js"></script>
+</body>
+
+</html>
