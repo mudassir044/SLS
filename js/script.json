@@ -1,0 +1,135 @@
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".navbar");
+        window.scrollY > 50 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky")
+    });
+    const counters = document.querySelectorAll(".stat-number"),
+        speed = 200;
+    counters.forEach(e => {
+        const t = () => {
+            const n = +e.getAttribute("data-count"),
+                o = +e.innerText,
+                r = n / speed;
+            o < n ? (e.innerText = Math.ceil(o + r), setTimeout(t, 1)) : e.innerText = n
+        };
+        t()
+    });
+    // const navSlide = () => {
+    //     const e = document.querySelector(".burger"),
+    //         t = document.querySelector(".nav-links");
+    //     e.addEventListener("click", () => {
+    //         t.classList.toggle("nav-active"), e.classList.toggle("toggle")
+    //     })
+    // };
+    // navSlide();
+    const instagramPosts = [{
+            imageUrl: "images/instagram1.jpg",
+            caption: "Supporting communities in need. #SAMLifeSavers #Charity",
+            link: "#"
+        }, {
+            imageUrl: "images/instagram2.jpg",
+            caption: "Another successful blood donation camp! #BloodDonation #SaveLives",
+            link: "#"
+        }, {
+            imageUrl: "images/instagram3.jpg",
+            caption: "Providing clean water to Tharparkar. #WaterProject #CleanWater",
+            link: "#"
+        }],
+        facebookPosts = [{
+            imageUrl: "images/facebook1.jpg",
+            caption: "Join us in our mission to help those in need. Donate now!",
+            link: "#"
+        }, {
+            imageUrl: "images/facebook2.jpg",
+            caption: "Volunteers making a difference every day. #Volunteer #SAMLifeSavers",
+            link: "#"
+        }, {
+            imageUrl: "images/facebook3.jpg",
+            caption: "Providing food to families during Ramadan. #Ramadan #FoodDrive",
+            link: "#"
+        }];
+
+    function displayInstagramPosts(e) {
+        const t = document.getElementById("instagram-posts");
+        e.forEach(e => {
+            const n = document.createElement("div");
+            n.classList.add("instagram-post"), n.innerHTML = `<img src="${e.imageUrl}" alt="Instagram Post" loading="lazy"><p>${e.caption}</p><a href="${e.link}" target="_blank">View Post</a>`, t.appendChild(n)
+        })
+    }
+
+    function displayFacebookPosts(e) {
+        const t = document.getElementById("facebook-posts");
+        e.forEach(e => {
+            const n = document.createElement("div");
+            n.classList.add("facebook-post"), n.innerHTML = `<img src="${e.imageUrl}" alt="Facebook Post" loading="lazy"><p>${e.caption}</p><a href="${e.link}" target="_blank">View Post</a>`, t.appendChild(n)
+        })
+    }
+    displayInstagramPosts(instagramPosts), displayFacebookPosts(facebookPosts);
+    const copyButtons = document.querySelectorAll(".copy-btn");
+    copyButtons.forEach(e => {
+        e.addEventListener("click", () => {
+            const t = document.querySelector(e.dataset.copy),
+                n = t.innerText;
+            navigator.clipboard.writeText(n).then(() => {
+                alert("Account number copied to clipboard!")
+            }).catch(e => {
+                console.error("Failed to copy: ", e)
+            })
+        })
+    });
+    const confirmDonationBtn = document.getElementById("confirm-donation"),
+        donationConfirmationModal = document.getElementById("donation-confirmation-modal"),
+        closeBtn = donationConfirmationModal.querySelector(".close");
+    confirmDonationBtn.addEventListener("click", () => {
+        donationConfirmationModal.style.display = "block"
+    }), closeBtn.addEventListener("click", () => {
+        donationConfirmationModal.style.display = "none"
+    });
+    const forms = document.querySelectorAll(".get-involved-page form,.contact-page form,.donation-page form");
+    forms.forEach(e => {
+        e.addEventListener("submit", t => {
+            e.querySelectorAll(".error-message").forEach(e => e.textContent = "");
+            const n = e.querySelector('input[type="email"]');
+            if (n && !validateEmail(n.value)) {
+                t.preventDefault();
+                const o = n.parentElement.querySelector(".error-message");
+                o.textContent = "Please enter a valid email address.", n.focus()
+            }
+        })
+    });
+
+    function validateEmail(e) {
+        const t = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return t.test(e)
+    }
+
+    function isModalOpen() {
+        return "block" === document.getElementById("donation-confirmation-modal").style.display
+    }
+    document.addEventListener("keydown", e => {
+        "Escape" === e.key && isModalOpen() && (document.getElementById("donation-confirmation-modal").style.display = "none")
+    })
+}); 
+
+ // Gallery Modal Functionality
+ const viewAllGalleryBtn = document.getElementById('view-all-gallery');
+ const galleryModal = document.getElementById('gallery-modal');
+ const closeGalleryBtn = document.getElementById('close-gallery');
+
+ viewAllGalleryBtn.addEventListener('click', function() {
+     galleryModal.style.display = 'block';
+ });
+
+ closeGalleryBtn.addEventListener('click', function() {
+     galleryModal.style.display = 'none';
+ });
+
+ window.addEventListener('click', function(event) {
+     if (event.target == galleryModal) {
+         galleryModal.style.display = 'none';
+     }
+ });
+
+ document.addEventListener("keydown", e => {
+     "Escape" === e.key && galleryModal.style.display === "block" && (galleryModal.style.display = "none")
+ });

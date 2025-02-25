@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - SAM Life Savers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css"> <!-- Link to your main CSS file -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="dark-mode">
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SAM Life Savers</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="our-work.html">Our Work</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="donate.html" class="donate-btn">Donate Now</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="donation-page">
+        <div class="container">
+            <h1>Make a Difference - Donate Today!</h1>
+            <p class="lead">Your contribution can bring hope and support to those who need it most.</p>
+
+            <div class="donation-tiers">
+                <div class="tier">
+                    <h3>Rs. 12000</h3>
+                    <p>1 Month Care For 1 Orphan</p>
+                </div>
+                <div class="tier">
+                    <h3>Rs. 8500</h3>
+                    <p>1 Month Food for a Family</p>
+                </div>
+                <div class="tier">
+                    <h3>Rs. 15000</h3>
+                    <p>Iftar Meals for 50 People</p>
+                </div>
+                <div class="tier">
+                    <h3>Rs. 10,000</h3>
+                    <p>Install a Hand Pump</p>
+                </div>
+            </div>
+
+            <section class="donation-methods">
+                <h2>Donate Via</h2>
+                <div class="methods-grid">
+                    <!-- Easypaisa -->
+                    <div class="method-card">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <h3>EasyPaisa</h3>
+                        <p>Account Name: SAM Life Savers</p>
+                        <p>Account Number: <span id="easypaisa-number">1234-5678901234</span> <button class="copy-btn" data-copy="#easypaisa-number"><i class="fas fa-copy"></i></button></p>
+                        <img src="images/easypaisa-qr.png" alt="EasyPaisa QR Code" class="qr-code">
+                    </div>
+
+                    <!-- JazzCash -->
+                    <div class="method-card">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <h3>JazzCash</h3>
+                        <p>Account Name: SAM Life Savers</p>
+                        <p>Account Number: <span id="jazzcash-number">4321-0987654321</span> <button class="copy-btn" data-copy="#jazzcash-number"><i class="fas fa-copy"></i></button></p>
+                        <img src="images/jazzcash-qr.png" alt="JazzCash QR Code" class="qr-code">
+                    </div>
+
+                    <!-- Bank Transfer -->
+                    <div class="method-card">
+                        <i class="fas fa-university fa-3x"></i>
+                        <h3>Bank Transfer</h3>
+                        <p>Bank Name: Bank AL Habib</p>
+                        <p>Account Title: SAM Life Savers</p>
+                        <p>Account Number: <span id="bank-number">1122-3344-5566-7788</span> <button class="copy-btn" data-copy="#bank-number"><i class="fas fa-copy"></i></button></p>
+                    </div>
+                </div>
+                <button class="btn btn-success" id="confirm-donation">Confirm Your Donation</button>
+            </section>
+        </div>
+
+        <!-- Donation Confirmation Modal -->
+        <div id="donation-confirmation-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h2>Confirm Your Donation</h2>
+                <p>Please fill out the form below to confirm your donation. This helps us track your contribution and provide you with updates.</p>
+
+                <form id="donation-confirmation-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Donation Amount (Rs.):</label>
+                        <input type="number" id="amount" name="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment_method">Payment Method:</label>
+                        <select id="payment_method" name="payment_method" required>
+                            <option value="">-- Select Payment Method --</option>
+                            <option value="easypaisa">EasyPaisa</option>
+                            <option value="jazzcash">JazzCash</option>
+                            <option value="bank_transfer">Bank Transfer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transaction_id">Transaction ID/Reference Number:</label>
+                        <input type="text" id="transaction_id" name="transaction_id" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Confirmation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="our-work.html">Our Work</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/your_instagram_handle" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/your_twitter_handle" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-legal">
+                <p>© 2024 SAM Life Savers. All rights reserved.</p>
+                <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/your_whatsapp_number" class="whatsapp-widget" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.min.js"></script>
+</body>
+
+</html>
