@@ -1,0 +1,322 @@
+/* Get Involved Page Specific Styles */
+.get-involved-page {
+    padding: 3rem 0;
+}
+
+.get-involved-page .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.get-involved-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple);
+}
+
+.get-involved-page .lead {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--olive-green);
+    font-size: 1.1rem;
+}
+
+/* Ways to Help Styles */
+.get-involved-page .ways-to-help {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.get-involved-page .ways-to-help h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple);
+}
+
+.get-involved-page .help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.get-involved-page .help-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.get-involved-page .help-card:hover {
+    transform: translateY(-5px);
+}
+
+.get-involved-page .help-card i {
+    font-size: 3rem;
+    color: var(--pastel-purple);
+    margin-bottom: 1rem;
+}
+
+.get-involved-page .help-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-purple);
+}
+
+.get-involved-page .help-card p {
+    color: var(--olive-green);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.get-involved-page .help-card .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Form Styles (Volunteer & Partner Forms) */
+.get-involved-page .volunteer-form,
+.get-involved-page .partner-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 600px;
+    width: 90%;
+    overflow: auto;
+    max-height: 80vh;
+}
+
+/* Form Header Styles */
+.get-involved-page .volunteer-form h2,
+.get-involved-page .partner-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--pastel-purple);
+}
+
+.get-involved-page .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.get-involved-page label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--olive-green);
+}
+
+/* style.min.css - Pastel Purple & Mint Green Color Scheme - Improved Mobile Navbar */
+
+/* Import existing styles (if needed - more likely you'll just add to style.min.css) */
+/* @import "style.min.css"; */
+
+/* Get Involved Page Specific Styles */
+.get-involved-page {
+    padding: 3rem 0;
+}
+
+.get-involved-page .container {
+    max-width: 1000px; /* Adjust as needed */
+}
+
+.get-involved-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple); /* Use existing color variable */
+}
+
+.get-involved-page .lead {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--olive-green); /* Use existing color variable */
+    font-size: 1.1rem;
+}
+
+/* Ways to Help Styles */
+.get-involved-page .ways-to-help {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.get-involved-page .ways-to-help h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple); /* Use existing color variable */
+}
+
+.get-involved-page .help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid */
+    gap: 2rem;
+}
+
+.get-involved-page .help-card {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.get-involved-page .help-card:hover {
+    transform: translateY(-5px);
+}
+
+.get-involved-page .help-card i {
+    font-size: 3rem;
+    color: var(--pastel-purple); /* Existing color variable */
+    margin-bottom: 1rem;
+}
+
+.get-involved-page .help-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-purple); /* Existing color variable */
+}
+
+.get-involved-page .help-card p {
+    color: var(--olive-green); /* Existing color variable */
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.get-involved-page .help-card .btn {
+    display: inline-block; /* Or 'block' for full-width */
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* General Form Styles (Hidden by Default) */
+.get-involved-page .volunteer-form,
+.get-involved-page .partner-form {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top of everything */
+    max-width: 600px;
+    width: 90%; /* Responsive width */
+    overflow: auto; /* Prevent content overflow */
+    max-height: 80vh;
+}
+
+/* Form Header Styles */
+.get-involved-page .volunteer-form h2,
+.get-involved-page .partner-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--pastel-purple); /* Use existing color variable */
+}
+
+.get-involved-page .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.get-involved-page label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500; /* Lighter weight for labels */
+    color: var(--olive-green); /* Existing color variable */
+}
+
+.get-involved-page input[type="text"],
+.get-involved-page input[type="email"],
+.get-involved-page input[type="tel"],
+.get-involved-page textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--primary-font); /* Existing font variable */
+    color: var(--olive-green); /* Existing color variable */
+}
+
+.get-involved-page textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.get-involved-page button[type="submit"] {
+    /* Use existing button styles */
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease;
+    background-color: var(--pastel-purple);
+    color: var(--white);
+    border: none; /* Remove default border */
+    cursor: pointer;
+}
+
+.get-involved-page button[type="submit"]:hover {
+    background-color: #c199c1; /* Darker purple */
+    color: var(--white);
+}
+
+/* Error Message Styles */
+.get-involved-page .form-group .error-message {
+    color: var(--error-color); /* Use existing error color variable */
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block; /* Ensure error messages take up full width */
+}
+
+/* Overlay Styles */
+.get-involved-page .overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Below the forms but above other content */
+}
+
+.get-involved-page .volunteer-form.active,
+.get-involved-page .partner-form.active,
+.get-involved-page .overlay.active {
+    display: block; /* Show when active class is present */
+}
+
+.get-involved-page .success-message {
+    display: none;
+    text-align: center;
+    color: var(--success-color); /* Use existing success color */
+    margin-top: 1rem;
+}
+
+.get-involved-page .form-group.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .get-involved-page .help-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+    .get-involved-page .volunteer-form,
+    .get-involved-page .partner-form {
+        width: 95%;
+    }
+}
+

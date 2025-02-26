@@ -9,32 +9,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.min.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="/css/style.min.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="/css/donate.css"> <!-- Link to your main CSS file -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body class="dark-mode">
 
+    <!-- Top Bar -->
+<div class="top-bar">
+    <div class="contact-info">
+        <span><i class="fas fa-envelope"></i> <a href="mailto:Info@samlifesavers.org">Info@samlifesavers.org</a></span>
+        <span><i class="fas fa-phone-alt"></i> <a href="tel:+923330968075">+92333 0968075</a></span>
+    </div>
+    <div class="top-bar-links">
+        <a href="/pages/contact.html">Become a Volunteer</a> OR
+        <a href="/pages/contact.html">Start Internship</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/people/SAM-Life-Savers/100090587816616/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/samlife_savers/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/sam-life-savers/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@SAMLIFESavers"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+
+    <!-- Sticky Navigation Bar -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">SAM Life Savers</a>
+            <a href="/index.html" class="logo">SAM Life Savers</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="our-work.html">Our Work</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="donate.html">Donate</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="/index.html#featured-stories">Our Work</a></li>
+                <li><a href="/pages/get-involved.html">Get Involved</a></li>
+                <li><a href="/pages/donate.html">Donate</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <a href="donate.html" class="donate-btn">Donate Now</a>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
+        <a href="/pages/donate.html" class="donate-btn">Donate Now</a>
+    </div>
+</nav>
 
     <section class="donation-page">
         <div class="container">
@@ -67,32 +82,33 @@
                     <div class="method-card">
                         <i class="fas fa-mobile-alt fa-3x"></i>
                         <h3>EasyPaisa</h3>
-                        <p>Account Name: SAM Life Savers</p>
-                        <p>Account Number: <span id="easypaisa-number">1234-5678901234</span> <button class="copy-btn" data-copy="#easypaisa-number"><i class="fas fa-copy"></i></button></p>
-                        <img src="images/easypaisa-qr.png" alt="EasyPaisa QR Code" class="qr-code">
+                        <p>Account Name: Muhammad Shahvez Adalat</p>
+                        <p>Account Number: <span id="easypaisa-number">0333 0968075</span> <button class="copy-btn" data-copy="#easypaisa-number"><i class="fas fa-copy"></i></button></p>
+                        <img src="/assets/easypaisa-qr.jpeg" alt="EasyPaisa QR Code" class="qr-code">
                     </div>
 
                     <!-- JazzCash -->
                     <div class="method-card">
                         <i class="fas fa-mobile-alt fa-3x"></i>
                         <h3>JazzCash</h3>
-                        <p>Account Name: SAM Life Savers</p>
-                        <p>Account Number: <span id="jazzcash-number">4321-0987654321</span> <button class="copy-btn" data-copy="#jazzcash-number"><i class="fas fa-copy"></i></button></p>
-                        <img src="images/jazzcash-qr.png" alt="JazzCash QR Code" class="qr-code">
+                        <p>Account Name: Muhammad Shahvez Adalat</p>
+                        <p>Account Number: <span id="jazzcash-number">0333 0968075</span> <button class="copy-btn" data-copy="#jazzcash-number"><i class="fas fa-copy"></i></button></p>
+                        <img src="/assets/jazzcash-qr.jpeg" alt="JazzCash QR Code" class="qr-code">
                     </div>
 
                     <!-- Bank Transfer -->
                     <div class="method-card">
                         <i class="fas fa-university fa-3x"></i>
                         <h3>Bank Transfer</h3>
-                        <p>Bank Name: Bank AL Habib</p>
-                        <p>Account Title: SAM Life Savers</p>
-                        <p>Account Number: <span id="bank-number">1122-3344-5566-7788</span> <button class="copy-btn" data-copy="#bank-number"><i class="fas fa-copy"></i></button></p>
+                        <p>Bank Name: Allied Bank</p>
+                        <p>Account Title: Muhammad Shahvez Adalat</p>
+                        <p>Account Number: <span id="bank-number">PK21ABPA0010123069490019</span> <button class="copy-btn" data-copy="#bank-number"><i class="fas fa-copy"></i></button></p>
+                        <img src="/assets/bank-qr.jpeg" alt="Bank QR Code" class="qr-code">
+                    
                     </div>
                 </div>
-                <button class="btn btn-success" id="confirm-donation">Confirm Your Donation</button>
-            </section>
-        </div>
+                <a href="/pages/confirmation.html" class="btn btn-success" id="confirm-donation">Confirm Your Donation</a>
+                    </div>
 
         <!-- Donation Confirmation Modal -->
         <div id="donation-confirmation-modal" class="modal">
@@ -132,23 +148,24 @@
             </div>
         </div>
     </section>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="our-work.html">Our Work</a></li>
-                    <li><a href="get-involved.html">Get Involved</a></li>
-                    <li><a href="donate.html">Donate</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/contact.html">About Us</a></li>
+                    <li><a href="/index.html#featured-stories">Our Work</a></li>
+                    <li><a href="/pages/get-involved.html">Get Involved</a></li>
+                    <li><a href="/pages/donate.html">Donate</a></li>
+                    <li><a href="/index.html">Blog</a></li>
+                    <li><a href="/pages/contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-social">
-                <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/your_instagram_handle" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/your_twitter_handle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/people/SAM-Life-Savers/100090587816616/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/samlife_savers/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/samlife_savers/" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
             <div class="footer-legal">
                 <p>© 2024 SAM Life Savers. All rights reserved.</p>
@@ -156,10 +173,13 @@
             </div>
         </div>
     </footer>
-    <a href="https://wa.me/your_whatsapp_number" class="whatsapp-widget" target="_blank">
+
+    <!-- WhatsApp Chat Widget -->
+    <a href="https://wa.me/+923360863545" class="whatsapp-widget" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <script src="script.min.js"></script>
+
+    <script src="./js/script.json"></script> <!-- Minified JS -->
 </body>
 
 </html>

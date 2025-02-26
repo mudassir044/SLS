@@ -10,43 +10,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.min.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="/css/contact.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="/css/style.min.css"> <!-- Link to your main CSS file -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body class="dark-mode">
 
+    <!-- Top Bar -->
+<div class="top-bar">
+    <div class="contact-info">
+        <span><i class="fas fa-envelope"></i> <a href="mailto:Info@samlifesavers.org">Info@samlifesavers.org</a></span>
+        <span><i class="fas fa-phone-alt"></i> <a href="tel:+923330968075">+92333 0968075</a></span>
+    </div>
+    <div class="top-bar-links">
+        <a href="/pages/contact.html">Become a Volunteer</a> OR
+        <a href="/pages/contact.html">Start Internship</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/people/SAM-Life-Savers/100090587816616/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/samlife_savers/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/sam-life-savers/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@SAMLIFESavers"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+
     <!-- Sticky Navigation Bar -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">SAM Life Savers</a>
+            <a href="/index.html" class="logo">SAM Life Savers</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="our-work.html">Our Work</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="donate.html">Donate</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="/index.html#featured-stories">Our Work</a></li>
+                <li><a href="/pages/get-involved.html">Get Involved</a></li>
+                <li><a href="/pages/donate.html">Donate</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <a href="donate.html" class="donate-btn">Donate Now</a>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
+        <a href="/pages/donate.html" class="donate-btn">Donate Now</a>
+    </div>
+</nav>
 
     <section class="contact-page">
         <div class="container">
             <h1>Contact Us</h1>
-            <p class="lead">Get in touch with SAM Life Savers for any inquiries, support, or partnership opportunities.</p>
+            <p class="lead">Get in touch with SAM Life Savers for any inquiries, volunteer opportunities, support, or partnership opportunities.</p>
 
             <div class="contact-grid">
                 <div class="contact-form">
                     <h2>Send us a Message</h2>
-                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <form id="contact-form" action="https://formspree.io/f/xgvojjvz" method="POST">
                         <div class="form-group">
                             <label for="name">Your Name:</label>
                             <input type="text" id="name" name="name" required>
@@ -55,6 +69,11 @@
                         <div class="form-group">
                             <label for="email">Your Email:</label>
                             <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="phone" id="phone" name="phone" required>
                             <span class="error-message"></span>
                         </div>
                         <div class="form-group">
@@ -68,9 +87,48 @@
 
                 <div class="contact-info">
                     <h2>Contact Information</h2>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:Info@samlifesavers.org">Info@samlifesavers.org</a></span>
+                    <span><i class="fas fa-phone-alt"></i> <a href="tel:+923330968075">+92333 0968075</a></span>
+                    <p> </p>
                     <div class="info-card">
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>Office Location</h3>
-                        <p>123 Main Street, City, Country</p>
+                        <p>D999- Al Basit Arcade, Fifth Road, Satellite Town, Rwp</p>
                         <!-- Google Maps Embed (Replace with your actual embed code) -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.4741518534237!2d67.00812677505668!3d24.851673946016142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ddf1b6f6cf5%3A0x47e380b9af36f278!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.634170593749!2d73.06434689999999!3d33.640726300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df958ee618a091%3A0xe30813e7ca5e9d6b!2sSam%20Life%20Savers!5e0!3m2!1sen!2s!4v1740580738040!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
+                            <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/contact.html">About Us</a></li>
+                    <li><a href="/index.html#featured-stories">Our Work</a></li>
+                    <li><a href="/pages/get-involved.html">Get Involved</a></li>
+                    <li><a href="/pages/donate.html">Donate</a></li>
+                    <li><a href="/index.html">Blog</a></li>
+                    <li><a href="/pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/SAM-Life-Savers/100090587816616/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/samlife_savers/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/samlife_savers/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-legal">
+                <p>© 2024 SAM Life Savers. All rights reserved.</p>
+                <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Widget -->
+    <a href="https://wa.me/+923360863545" class="whatsapp-widget" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./js/script.json"></script> <!-- Minified JS -->
+</body>
+
+</html>

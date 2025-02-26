@@ -1,0 +1,138 @@
+/* Contact Page Specific Styles */
+.contact-page {
+    padding: 3rem 0;
+}
+
+.contact-page .container {
+    max-width: 1000px; /* Adjust as needed */
+}
+
+.contact-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple); /* Use existing color variable */
+}
+
+.contact-page .lead {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--olive-green); /* Use existing color variable */
+    font-size: 1.1rem;
+}
+
+.contact-page .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Flexible grid */
+    gap: 2rem;
+}
+
+.contact-page .contact-form,
+.contact-page .contact-info {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+
+.contact-page h2 {
+    margin-bottom: 1.5rem;
+    color: var(--dark-purple); /* Use existing color variable */
+}
+
+/* Form Styles (Consistent with existing form styles) */
+.contact-page .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-page label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500; /* Lighter weight for labels */
+    color: var(--olive-green); /* Existing color variable */
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page input[type="phone"],
+.contact-page textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--primary-font); /* Existing font variable */
+    color: var(--olive-green); /* Existing color variable */
+}
+
+.contact-page textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-page button[type="submit"] {
+    /* Use existing button styles */
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease;
+    background-color: var(--pastel-purple);
+    color: var(--white);
+    border: none; /* Remove default border */
+    cursor: pointer;
+}
+
+.contact-page button[type="submit"]:hover {
+    background-color: #c199c1; /* Darker purple */
+    color: var(--white);
+}
+
+/* Contact Info Styles */
+.contact-page .info-card {
+    margin-bottom: 1.5rem;
+}
+
+.contact-page .info-card i {
+    font-size: 2rem;
+    color: var(--pastel-purple); /* Existing color variable */
+    margin-bottom: 0.5rem;
+}
+
+.contact-page .info-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-purple); /* Existing color variable */
+}
+
+.contact-page .info-card p {
+    color: var(--olive-green); /* Existing color variable */
+}
+
+.contact-page iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* Error Message Styles */
+.contact-page .error-message {
+    color: var(--error-color); /* Use existing error color variable */
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block; /* Ensure error messages take up full width */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-page .contact-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .contact-page .contact-form,
+    .contact-page .contact-info {
+        padding: 1.5rem;
+    }
+
+    .contact-page h1 {
+        font-size: 2.5rem; /* Adjust title size on smaller screens */
+    }
+}

@@ -15,41 +15,50 @@
 <link rel="manifest" href="./favicon_io/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css"> <!-- Minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body class="dark-mode">
 
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="contact-info">
+        <span><i class="fas fa-envelope"></i> <a href="mailto:Info@samlifesavers.org">Info@samlifesavers.org</a></span>
+        <span><i class="fas fa-phone-alt"></i> <a href="tel:+923330968075">+92333 0968075</a></span>
+    </div>
+    <div class="top-bar-links">
+        <a href="/pages/contact.html">Become a Volunteer</a> OR
+        <a href="/pages/contact.html">Start Internship</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/people/SAM-Life-Savers/100090587816616/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/samlife_savers/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/sam-life-savers/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@SAMLIFESavers"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+
     <!-- Sticky Navigation Bar -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">SAM Life Savers</a>
+            <a href="/index.html" class="logo">SAM Life Savers</a>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="our-work.html">Our Work</a></li>
-                <li><a href="get-involved.html">Volunteer</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="/index.html#featured-stories">Our Work</a></li>
+                <li><a href="/pages/get-involved.html">Get Involved</a></li>
+                <li><a href="/pages/donate.html">Donate</a></li>
+                <li><a href="/index.html">Blog</a></li>
+                <li><a href="/pages/contact.html">Contact Us</a></li>
             </ul>
-        </div>
-    </nav>
+        <a href="/pages/donate.html" class="donate-btn">Donate Now</a>
+    </div>
+</nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-image">
-            <img src="./assets/hero4.jpeg" alt="Tharparkar Water Project" loading="lazy">
-        </div>
-        <div class="hero-content">
-            <h1>Hope in Action, Lives in Motion</h1>
-            <p>Working together to bring hope and support to communities in need.</p>
-            <div class="hero-buttons">
-                <a href="/pages/donate.html" class="btn btn-primary">Donate Now</a>
-                <a href="/pages/get-involved.html" class="btn btn-secondary">Join the Mission</a>
-            </div>
-        </div>
-        <div class="glassmorphism-overlay"></div>
-    </header>
+<!-- Hero Section -->
+<header class="hero">
+    <img src="./assets/hero6.png" alt="Tharparkar Water Project" class="hero-image">
+</header>
 
     <!-- Key Stats Section -->
     <section class="key-stats">
@@ -79,7 +88,7 @@
     </section>
 
     <!-- Featured Stories Section -->
-    <section class="featured-stories">
+    <section class="featured-stories" id="featured-stories">
         <div class="container">
             <h2>Featured Stories</h2>
             <div class="stories-grid">
@@ -87,19 +96,19 @@
                     <img src="./assets/tharparker.jpeg" alt="Story 1" loading="lazy">
                     <h3>A New Well, A New Hope</h3>
                     <p>Read how a new water pump transformed a village in Tharparkar.</p>
-                    <a href="blog/story1.html" class="read-more">Read More</a>
+                    <a href="https://www.instagram.com/reel/DFct6N-sVyI/?utm_source=ig_web_copy_link" class="read-more">Read More</a>
                 </div>
                 <div class="story-card">
                     <img src="./gallery/10.jpeg" alt="Story 2" loading="lazy">
                     <h3>Saving Lives with Blood Donations</h3>
                     <p>Learn about our impact on thalassemia patients through blood donation drives.</p>
-                    <a href="blog/story2.html" class="read-more">Read More</a>
+                    <a href="https://www.instagram.com/p/DC7S_D2IGZ4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="read-more">Read More</a>
                 </div>
                 <div class="story-card">
                     <img src="./gallery/12.jpeg" alt="Story 3" loading="lazy">
                     <h3>Providing Food in Times of Need</h3>
                     <p>Our efforts to provide food and support to families affected by natural disasters.</p>
-                    <a href="blog/story3.html" class="read-more">Read More</a>
+                    <a href="https://www.instagram.com/reel/C5jt_G6tbnX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="read-more">Read More</a>
                 </div>
             </div>
         </div>
@@ -263,14 +272,14 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-links">
-                <ul>
-                    <li><a href="/Index.html">Home</a></li>
-                    <li><a href="/Index.html">About Us</a></li>
-                    <li><a href="/Index.html">Our Work</a></li>
-                    <li><a href="/Index.html">Get Involved</a></li>
-                    <li><a href="/Index.html">Donate</a></li>
-                    <li><a href="/Index.html">Blog</a></li>
-                    <li><a href="/Index.html">Contact Us</a></li>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/contact.html">About Us</a></li>
+                    <li><a href="/index.html#featured-stories">Our Work</a></li>
+                    <li><a href="/pages/get-involved.html">Get Involved</a></li>
+                    <li><a href="/pages/donate.html">Donate</a></li>
+                    <li><a href="/index.html">Blog</a></li>
+                    <li><a href="/pages/contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-social">

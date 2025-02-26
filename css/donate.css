@@ -1,0 +1,259 @@
+/* style.css - Donation Page Styles - Adhering to existing style.min.css structure */
+
+/* Import existing styles (if needed - more likely you'll just add to style.min.css) */
+/* @import "style.min.css"; */
+
+/* Donation Page Specific Styles */
+.donation-page {
+    padding: 3rem 0;
+}
+
+.donation-page .container {
+    max-width: 1000px; /* Adjust as needed */
+}
+
+.donation-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple); /* Use existing color variable */
+}
+
+.donation-page .lead {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--olive-green); /* Use existing color variable */
+    font-size: 1.1rem;
+}
+
+/* Donation Tiers Styles */
+.donation-page .donation-tiers {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap; /* Allow tiers to wrap */
+}
+
+.donation-page .tier {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    width: 250px; /* Fixed width */
+}
+
+.donation-page .tier:hover {
+    transform: translateY(-5px);
+}
+
+.donation-page .tier h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-purple); /* Existing color variable */
+    font-size: 1.5rem;
+}
+
+.donation-page .tier p {
+    color: var(--olive-green); /* Existing color variable */
+    font-size: 0.9rem;
+}
+
+/* Donation Methods Styles */
+.donation-page .donation-methods {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.donation-page .donation-methods h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pastel-purple); /* Use existing color variable */
+}
+
+.donation-page .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid */
+    gap: 2rem;
+}
+
+.donation-page .method-card {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.donation-page .method-card i {
+    font-size: 3rem;
+    color: var(--pastel-purple); /* Existing color variable */
+    margin-bottom: 1rem;
+}
+
+.donation-page .method-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-purple); /* Existing color variable */
+}
+
+.donation-page .method-card p {
+    color: var(--olive-green); /* Existing color variable */
+    font-size: 0.9rem;
+}
+
+.donation-page .qr-code {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+
+/* Copy Button Style */
+.donation-page .copy-btn {
+    background-color: transparent;
+    color: var(--pastel-purple); /* Existing color variable */
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.donation-page .copy-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+}
+
+.donation-page .copy-btn i {
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+.donation-page #confirm-donation {
+    display: block;
+margin: 1rem auto;
+}
+
+/* Success Button Style */
+.btn-success {
+    background-color: #4CAF50; /* Example: Green */
+    color: #fff; /* White text */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.btn-success:hover {
+    background-color: #43A047; /* Darker green on hover */
+}
+
+/* Modal Styles (Consistent with existing modal styles) */
+.donation-page .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.donation-page .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Limit width */
+    border-radius: 10px;
+    position: relative;
+}
+
+.donation-page .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.donation-page .close:hover,
+.donation-page .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Donation Confirmation Form Styles */
+.donation-page #donation-confirmation-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.donation-page #donation-confirmation-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500; /* Lighter weight for labels */
+    color: var(--olive-green); /* Existing color variable */
+}
+
+.donation-page #donation-confirmation-form input[type="text"],
+.donation-page #donation-confirmation-form input[type="email"],
+.donation-page #donation-confirmation-form input[type="number"],
+.donation-page #donation-confirmation-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--primary-font); /* Existing font variable */
+    color: var(--olive-green); /* Existing color variable */
+}
+
+.donation-page #donation-confirmation-form button[type="submit"] {
+    /* Use existing button styles */
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease;
+    background-color: var(--pastel-purple);
+    color: var(--white);
+    border: none; /* Remove default border */
+    cursor: pointer;
+}
+
+.donation-page #donation-confirmation-form button[type="submit"]:hover {
+    background-color: #c199c1; /* Darker purple */
+    color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donation-page .donation-tiers {
+        flex-direction: column; /* Stack tiers on smaller screens */
+        align-items: center; /* Center tiers */
+    }
+
+    .donation-page .tier {
+        width: 90%; /* Wider tiers on mobile */
+    }
+
+    .donation-page .methods-grid {
+        grid-template-columns: 1fr; /* Stack methods on smaller screens */
+    }
+
+    .donation-page .modal-content {
+        width: 90%; /* Wider modal on mobile */
+    }
+}

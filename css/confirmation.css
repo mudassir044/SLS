@@ -1,0 +1,141 @@
+/* confirmation.css - Donation Confirmation Page Styles */
+
+/* Use existing theme color variables */
+:root {
+    --pastel-purple: #D8BFD8;
+    --mint-green: #98FF98;
+    --dark-purple: #4A235A;
+    --olive-green: #556B2F;
+    --white: #FFFFFF;
+    --success-color: #4CAF50;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: var(--olive-green);
+    line-height: 1.6;
+    margin: 0; /* Resetting default margin */
+    padding: 0; /* Resetting default padding */
+}
+
+.confirmation-page {
+    padding: 4rem 0;
+    text-align: center; /* Center content */
+}
+
+.confirmation-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.confirmation-page .confirmation-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    text-align: center;
+}
+
+.confirmation-page i {
+    color: var(--success-color);
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-page h1 {
+    color: var(--dark-purple);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem; /* Adjusted for better readability */
+}
+
+.confirmation-page p {
+    font-size: 1.1rem;
+    color: var(--olive-green);
+    margin-bottom: 2rem;
+}
+
+.confirmation-page .impact-info,
+.confirmation-page .next-steps,
+.confirmation-page .transparency-statement,
+.confirmation-page .share-donation {
+    margin-top: 3rem;
+    border-top: 1px solid #eee;
+    padding-top: 3rem;
+}
+
+.confirmation-page .donation-details {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+}
+
+.confirmation-page h2 {
+    color: var(--pastel-purple);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.confirmation-page .donation-details p {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.confirmation-page .next-steps .btn {
+    margin: 0.5rem;
+}
+
+.confirmation-page .next-steps .btn-primary {
+    background-color: var(--pastel-purple);
+    color: var(--white);
+}
+
+.confirmation-page .next-steps .btn-secondary {
+    background-color: transparent;
+    color: var(--pastel-purple);
+    border: 1px solid var(--pastel-purple);
+}
+
+.confirmation-page .share-donation .social-icon {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: var(--olive-green);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.confirmation-page .share-donation .social-icon:hover {
+    color: var(--pastel-purple);
+}
+
+/* Force all Images to be properly displayed */
+.confirmation-page .impact-info li i,
+.confirmation-page a {
+   display:inline-block;
+}
+
+/* Force everything to center:*/
+
+/* All texts should be center from what I understand */
+ .confirmation-page *{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .confirmation-page .container {
+        padding: 1.5rem;
+    }
+
+    .confirmation-page .confirmation-card {
+        padding: 2rem;
+    }
+   .confirmation-page *{
+        font-size: 1 rem
+   }
+   .confirmation-page h1 {
+       font-size: 2 rem;
+   }
+}
